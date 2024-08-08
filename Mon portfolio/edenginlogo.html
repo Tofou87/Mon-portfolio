@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0,
+                   user-scalable=no">
+    <title>Eden gin - Logo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f80ef4db84.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+	<header>
+    <div class="second_background">
+      <div class="navigation_bar">
+        <div class="logo">        
+          <a href="index.html">
+            <figure>
+              <img src="images/logo-CF-portfolio-white.png" alt="logo du portfolio">
+            </figure>
+          </a>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="mesrealisations.html">Mes réalisations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav> <!-- fin de navigation -->
+      </div> <!-- fin navigation_bar-->
+
+      <div class="navigation_bar_mobile">
+        <div class="logo_mobile">       
+          <a href="index.html">
+            <figure>
+              <img src="images/logo-CF-portfolio-white.png" alt="logo du portfolio">
+            </figure>
+          </a>
+        </div> <!--  fin de logo mobile -->
+
+        <nav class="navigation_mobile">
+          <ul class="menu_mobile">
+            <li><a href="apropos.html">A propos</li>
+            <li><a href="mesrealisations.html">Mes réalisations</li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav> <!-- fin de navigation mobile -->
+
+        <i class="fa-solid fa-bars"></i>
+
+      </div> <!-- fin de navigation bar mobile-->
+
+      <script>
+              const menuHamburger = document.querySelector(".fa-solid")
+              const navLinks = document.querySelector(".navigation_mobile")
+              menuHamburger.addEventListener('click',()=>{
+              navLinks.classList.toggle('mobile-menu')
+              })
+          </script>       
+    </div> <!-- fin second background -->   
+  </header> <!-- fin header -->
+
+
+	<section class="edenginlogo">
+		<div class="wrapper">
+			<h1>Projet : Eden gin</h1>
+			<article>
+        <p>
+          Contexte : Dans le cadre d'un travail individuel, il m'a été demandé de réaliser le logo d'une marque fictive de gin dont la thématique est l'Eden.
+        </p>
+        <p>
+          Cette marque n'existant pas, il m'a fallut partir d'une feuille blanche et créer ce logo en partant de rien.
+        </p>
+      	</article>
+      	<h2>Les différentes étapes de mon processus de création :</h2>
+      	<div class="edenginlogo_container">
+      		<article>
+      			<p>
+      				J'ai tout d'abord commenceé par définir les éléments que je voulais retrouver dans mon logo. J'ai donc choisis de partir d'une bouteille et d'y ajouter des pommes et un serpent afin que mon logo final évoque directement l'Eden.
+      			</p>
+            
+      		</article>
+      			<div class="contours_logo">
+      				<img src="edenginlogo/logogin_bouteillecontours.png">
+      				<img src="edenginlogo/logogin_serpentcontours.png">
+      				<img src="edenginlogo/logogin_pommescontours.png">			
+      			</div> <!-- fin de contours logo -->
+
+      		<article>
+      			<p>
+      				Mes éléments définis et après avoir créer leur forme générale j'ai fais le choix d'ajouter des détails à chacun d'entre eux. Cette étape ayant pour but d'apporter du réalisme à mon logo et de le rendre plus qualitatif.
+      			</p>
+      		</article>
+      		  <div class="details_logo">
+      				<img src="edenginlogo/logogin_bouteilledetails.png">
+      				<img src="edenginlogo/logogin_serpentdetails.png">
+      				<img src="edenginlogo/logogin_pommesdetails.png">				
+      			</div> <!-- fin de details logo -->
+
+      		<article>
+      			<p>
+      				Après avoir détaillé chacun des mes éléments j'ai ajouté de la couleur à chacun d'entre eux.
+      			</p>
+      		</article>
+      			<div class="couleurs_logo">			
+      				<img src="edenginlogo/logogin_bouteillecouleurs.png">
+      				<img src="edenginlogo/logogin_serpentcouleurs.png">
+      				<img src="edenginlogo/logogin_pommescouleurs.png">
+      			</div> <!-- fin de couleurs logo -->
+
+      		<article>
+      			<p>
+      				La dernière étape de mon processus de création était de réunir chacun de ces 3 élements, d'en ajuster les dimensions et de les placer de façon à obtenir un résultat optimal.
+      			</p>
+      			<p>
+      				Pour découvrir le résultat final, je vous invite à cliquer ci-dessous.
+      			</p>
+      		</article>	
+
+          <a class="button" href="edenginlogo/logogin_finalcouleurs.png">Découvrir le résultat final</a>
+
+      </div> <!-- fin de eden gin logo container -->
+		</div> <!-- fin de wrapper -->
+	</section> <!-- fin de eden gin logo -->
+
+
+	<footer>
+		<p>
+			Copyright &copy; 2022 Fievez Christophe. Tous droits réservés.
+		</p>
+	</footer>
+
+</body>

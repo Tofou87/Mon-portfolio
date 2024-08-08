@@ -1,0 +1,1342 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Overlock:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+}
+
+.wrapper {
+  min-width: 360px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+
+/* navigation top */
+
+.navigation_top {
+	display: flex;
+	flex-direction: row;
+	height: 50px;
+	justify-content: flex-end;
+	margin-right: 30px;
+	font-family: overlock;
+}
+
+.navigation_top a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.navigation :hover {
+	color: #f0a030;
+}
+
+.languages {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 108px;
+	margin-right: 40px;
+}
+
+.connexion {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 94px;
+	margin-right: 30px;
+}
+
+.connexion p:hover {
+	color: #f0a030;
+}
+
+.caddy {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 76px;
+}
+
+.caddy p:hover {
+	color: #f0a030;
+}
+
+#connexion_logo {
+	margin-top: -8px;
+}
+
+
+
+/* navigation bar */
+
+.navigation_bar {
+	display: flex;
+	flex-direction: row;
+	height: 50px;
+	width: 950px;
+	background-image: url("images/texture_ardoise.jpeg");
+	background-size: cover;
+	border-radius: 15px;
+	margin: 10px auto;
+	box-shadow: 0px 5px 10px rgba(55, 55, 55, 0.9);
+	position: absolute;
+	margin-left: 38px;
+}
+
+.navigation_bar a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 83px;
+	padding-left: 35px;
+}
+
+
+/* amoureux du fromage */
+
+.amoureux_du_fromage {
+	height: 600px;
+	width: 100%;	
+	background-image: url("images/fond_raye.png");
+	background-position: center;	
+	margin-top: 40px;
+}
+
+h1 {
+	font-size: 52px;
+	font-family: overlock;
+	text-align: center;
+	margin-top: 45px;
+	color: #f0a030;
+}
+
+h2 {
+	font-size: 45px;
+	font-family: lobster;
+	text-align: center;
+	color: #f0a030;
+}
+
+.maitre_corbeau_text {
+	position: absolute;
+	margin-top: 18px;
+	width: 1024px;
+}
+
+.maitre_corbeau_text h2 {
+	margin-top: -45px;
+}
+
+
+/* nos fromages à la une */
+
+.nos_fromage_a_la_une {
+	height: 500px;
+	margin-top: -70px;
+}
+
+.fromage_a_la_une_title {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: space-between;
+	margin: 12px;
+}
+
+h3 {
+	font-family: lobster;
+	font-size: 30px;
+	color: #f0a030;
+	margin-top: -17px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#deco_left {
+    border: 1px solid #f0a030;
+    width: 210px;
+    height: 5px;
+    border-left: 0px;
+    border-right: 0px;
+    text-align: center;
+}
+
+#deco_right {
+    border: 1px solid #f0a030;
+    width: 210px;
+    height: 5px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.nos_fromages_grid {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 40px;
+  	justify-content: center;
+	max-width: 1024px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.grid_bloc {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	overflow: hidden;
+	height: 355px;
+	width: 220px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.images_and_stars {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-top: 0px;
+	align-items: center;
+	height: 270px;
+}
+
+.stars_note {
+	width: 180px;
+	margin-top: 10px
+}
+.products_infos {
+	padding: 20px 0;
+	text-align: center;
+	flex-grow: 1;
+	font-size: 15px;
+}
+
+.price_and_weight {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.grid_bloc:hover .hover {
+	transform: translate(0, -10px);
+}
+
+.products_infos:before {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 90%;
+	margin: 0 auto;
+	background-color: #cacbcc;
+	margin-bottom: 15px;
+}
+
+.fromage_name {
+	font-size: 20px;
+	color: #f0a030;
+	font-family: overlock;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.price_and_weight {
+	display: flex;
+	flex-direction: row;
+	width: 140px;
+	justify-content: space-between;
+	margin-top: -12px;
+	padding-bottom: 4px;
+	margin-left: 40px;
+}
+
+.price_bloc {
+	height: 22px;
+	width: 55px;
+	background-color: #f0a030;
+	margin-top: -10px;
+}
+
+.price {
+	color: #ffffff;
+	margin-top: 0px;
+	text-align: center;
+	font-size: 18px;
+	font-family: overlock;
+}
+
+.weight {
+	color: #000000;
+	font-size: 18px;
+	font-family: overlock;
+	margin-top: 10px;
+}
+
+.hover {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: 0px;
+	transform: translate(0, 90px);
+	height: 90px;
+	width: 210px;
+	background-color: #fff;
+	padding: 0 5px;
+	align-items: end;
+	margin-left: 5px;
+}
+
+.icon-hover img {
+ 	width: 54px;
+}
+
+
+/* découvrez nos secrets */
+
+.découvrez_nos_secrets {
+	height: 542px;
+	width: 100%;
+	margin-top: -50px;
+	background-image: url("images/fond_ardoise.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.découvrez_nos_secrets_title {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: space-between;
+	margin: 12px;
+	padding-top: 70px;
+}
+
+.nos_secrets_grid {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 24px;
+  	justify-content: center;
+	max-width: 1024px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.grid_bloc_secrets_back {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 365px;
+	width: 230px;
+	border-radius: 5px;
+	background-color: #555;
+	margin-top: -20px;
+}
+
+.grid_bloc_secrets {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 355px;
+	width: 220px;
+	background-color: #ffffff;
+}
+
+.fromage_bloc_secret {
+	height: 210px;
+	width: 210px;
+	margin : auto;
+	margin-top: 6px;
+}
+
+.products_title {
+	color: #f0a030;
+	text-align: center;
+	font-size: 20px;
+	font-family: overlock;
+	margin-top: 0px;
+}
+
+.products_infos_secret {
+	color: #000000;
+	text-align: center;
+	font-size: 12px;
+	margin-top: -5px;
+	margin-right: 8px;
+	margin-left: 8px;
+	margin-bottom: 15px;
+}
+
+
+/* nos plateaux gourmandes */
+
+.nos_plateaux_gourmands {
+	height: 500px;
+	margin-top: 40px;
+}
+
+.nos_plateaux_gourmands_title {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: space-between;
+	margin: 12px;
+}
+
+.nos_plateaux_grid {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 40px;
+  	justify-content: center;
+	max-width: 1024px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.plateaux_bloc {
+	height: 190px;
+	width: 100%;
+}
+
+
+/* nos engagements */
+
+.nos_engagements {
+	height: 542px;
+	width: 100%;
+	margin-top: -35px;
+	background-image: url("images/fond_ardoise.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.nos_engagements_title {
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 85px;
+}
+
+.engagements_grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: -19px;
+}
+
+.engagements_bloc {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 65px;
+	height: 250px;
+}
+
+.engagements_bloc_top {
+	height: 135px;
+	display: flex;
+	align-items: center;
+}
+
+.engagements_bloc_bottom {
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.engagements_infos {
+	color: #ffffff;
+	font-size: 32px;
+	font-family: overlock;
+}
+
+span {
+	color: #ffffff;
+	font-size: 15px;
+	font-family: overlock;
+	margin-top: -30px;
+}
+
+
+/* nous contacter */
+
+.nous_contacter {
+	height: 740px;
+	margin-top: 40px;
+}
+
+.nous_contacter_title {
+	text-align: center;
+	justify-content: space-between;
+	margin: 12px;
+}
+
+
+/* formulaire */
+
+form {
+ 	height: 450px;
+ 	width: 100%;
+ 	text-align: center;
+ 	margin : 0 auto;
+ 	padding: 0 30px;
+}
+
+form input,
+textarea {
+ 	height: 40px;
+ 	width: 100%;
+ 	border: 1px solid #000;
+ 	box-shadow: 0 5px 10px rgba(51, 51, 51, 0.6);
+ 	margin-bottom: 35px;
+}
+
+input::placeholder,
+textarea::placeholder {
+ 	color: #f0a030;
+ 	font-family: overlock;
+ 	font-size: 20px;
+}
+
+textarea::placeholder {
+ 	padding-top: 15px;
+}
+
+form textarea {
+	height: 140px;
+ 	resize: none;
+}
+
+form button {
+	height: 50px;
+	width: 180px;
+	border: none;
+	border-radius: 10px;
+	background-color: #f0a030;
+	font-size: 16px;
+	font-family: overlock;
+	color: #ffffff;
+}
+
+form button:hover {
+	background-color: #A66A16;
+}
+
+
+/*  réseaux sociaux */
+
+.social_network {
+	display: flex;
+	flex-direction: row;
+	width: 400px;
+	justify-content: space-between;
+	margin: auto;
+	margin-top: 80px;
+}
+
+.facebook_network {
+	display: flex;
+	flex-direction: row;
+	height: 60px;
+	width: 170px;
+	background-color: #3B5998;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.facebook_network p {
+	color: #ffffff;
+	font-size: 15px;
+	padding-left: 33px;
+	text-align: center;
+	margin-top: -35px;
+	font-family: overlock;
+}
+
+.facebook_network i {
+	color: #ffffff;
+	font-size: 32px;
+	padding-left: 6px;
+	margin-top: 19px
+}
+
+.facebook_network:hover {
+	box-shadow: 0 5px 10px rgba(51, 51, 51, 0.6);
+}
+
+.twitter_network {
+	display: flex;
+	flex-direction: row;
+	height: 60px;
+	width: 170px;
+	background-color: #00ACEE;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.twitter_network p {
+	color: #ffffff;
+	font-size: 15px;
+	padding-left: 33px;
+	text-align: center;
+	margin-top: -35px;
+	font-family: overlock;
+}
+
+.twitter_network i {
+	color: #ffffff;
+	font-size: 32px;
+	padding-left: 6px;
+	margin-top: 19px
+}
+
+.twitter_network:hover {
+	box-shadow: 0 5px 10px rgba(51, 51, 51, 0.6);
+}
+
+.social_network a {
+	text-decoration: none;
+}
+
+
+/* déco du footer */
+
+.deco_footer {
+	display: flex;
+	height: 32px;
+	background-image: url("images/plat_tablette.png");
+	margin-top: 40px;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo_corbeau_footer {	
+	height: 120px;
+	width: 95px;	
+	background-image: url("images/logo_corbeau.png");
+	background-size: cover;
+	z-index: 10;
+}
+
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 288px;
+  padding-bottom: 30px;
+  background-image: url("images/fond_raye_plat.png");
+}
+
+.footer_bloc_infos {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	height: 190px;
+	width: 355px;
+	background-image: url("images/texture_ardoise.jpeg");
+}
+
+.footer_title {
+	font-size: 20px;
+	color: #f0a030;
+	font-family: overlock;
+	margin-top: 35px;
+}
+
+.footer_corbeau_title {
+	font-size: 18px;
+	color: #ffffff;
+	font-family: overlock;
+	margin-top: -35px;
+}
+
+.footer_adress {
+	font-size: 15px;
+	color: #ffffff;
+	font-family: overlock;
+	margin-top: -25px;
+}
+
+.phone_number {
+	font-size: 15px;
+	color: #ffffff;
+	font-family: overlock;
+	margin-top: -25px;
+}
+
+.copyright {
+	font-size: 20px;
+	color: #f0a030;
+	font-family: overlock;
+	margin-top: 40px;
+}
+
+
+
+
+
+/*** DEKSTOP ***/
+ 
+@media screen and (min-width: 1021px){
+
+	.fa-solid {
+		display: none;
+	}
+
+	.navigation_bar_mobile {
+		display: none;
+	}
+}
+
+
+
+/*** TABLETTE ***/
+
+@media screen and (min-width: 521px) and (max-width: 1020px){
+
+	.navigation_bar {
+		display: none;
+	}
+
+	.navigation_top {
+		display: none;
+	}
+
+	.navigation_bar_mobile {
+		display: flex;
+		flex-direction: row;
+		height: 130px;
+		width: 100%;
+		background-image: url("images/texture_ardoise.jpeg");
+		justify-content: space-between;
+	}
+
+	.logo_corbeau_mobile {	
+		height: 101px;
+		width: 80px;	
+		background-image: url("images/logo_corbeau.png");
+		background-size: cover;
+		margin-top: 14px;
+		margin-left: 17px;
+	}
+
+	.fa-solid {
+		position: relative;
+		color: #ffffff;
+		font-size: 60px;
+		margin-top: 36px;
+		margin-right: 40px;
+	}
+
+	.navigation_mobile a {
+		text-decoration: none;
+		color: #ffffff;
+		margin-top: 20px;
+		font-size: 20px;
+		font-family: overlock;
+	}
+
+	.navigation_mobile a:hover {
+		color: #f0a030;
+	}
+
+	.navigation_mobile {
+		display: flex;
+		flex-direction: column;
+		background-image: url("images/texture_ardoise.jpeg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: absolute;
+		height: 450px;
+		width: 100%;
+		align-items: center;
+		z-index: 10;
+		margin-left: -100%;
+	}
+
+	.menu_mobile {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.languages_mobile {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 150px;
+		margin: auto;
+		margin-top: 30px;
+	}
+
+	.languages_mobile p {
+		color: #ffffff;
+		font-size: 20px;
+	}
+
+	.connexion_caddy {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 275px;
+		margin-top: 15px;
+	}
+
+	.connexion_mobile {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 120px;
+	}
+
+	.connextion_text {
+		margin-top: -7px
+	}
+
+	.caddy_text {
+		margin-top: -7px;
+	}
+
+	.caddy_mobile {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 90px;
+	}
+
+	.navigation_bar {
+		justify-content: space-between;
+	}
+
+	.mobile-menu {
+		margin-left: 0px;
+		margin-top: 130px;
+	}
+
+
+	/* amoureux du fromage tablette */
+
+	.amoureux_du_fromage {
+		display: flex;
+		height: 450px;
+		width: 100%;
+		background-image: url("images/fond_raye_mobile.png");
+		background-size: cover;
+		margin-top: 0px;
+	}
+
+	h1 {
+		font-size: 45px;
+	}
+
+	h2 {
+		font-size: 35px;
+	}
+
+	.maitre_corbeau_text {
+		margin-top: -5px;
+		width: 100%;
+	}
+
+	.maitre_corbeau_text h2 {
+		margin-top: -40px;
+	}
+
+
+	/* nos fromages à la une tablette */
+
+	.nos_fromage_a_la_une {
+		height: 920px;
+		margin-top: -30px;
+	}
+
+	.nos_fromages_grid {
+		display: grid;
+		grid-template-columns: 220px 220px;
+		grid-template-rows: 1fr 1fr;
+		grid-column-gap: 8%;
+		grid-row-gap: 40px
+	  	justify-content: center;
+		max-width: 1024px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+
+	/* nos secrets tablette */
+
+	.découvrez_nos_secrets {
+		height: 950px;
+		width: 100%;
+		margin-top: -50px;
+		background-image: url("images/texture_ardoise.jpeg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.nos_secrets_grid {
+		display: grid;
+	    grid-template-columns: 230px 230px;
+		grid-template-rows: 1fr 1fr;
+		grid-column-gap: 6%;
+		grid-row-gap: 50px;
+	  	justify-content: center;
+		max-width: 1024px;
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-top: 25px;
+	}
+
+
+	/* nos plateaux gourmandes tablette */
+
+	.nos_plateaux_gourmands {
+		height: 920px;
+		margin-top: 60px;
+	}
+
+	.nos_plateaux_grid {
+		display: grid;
+	    grid-template-columns: 220px 220px;
+		grid-template-rows: 1fr 1fr;
+		grid-column-gap: 8%;
+	  	justify-content: center;
+		max-width: 1024px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+
+	/* nos engagements */
+
+	.nos_engagements {
+		height: 500px;
+		width: 100%;
+		margin-top: -35px;
+		background-image: url("images/texture_ardoise.jpeg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.nos_engagements_title {
+		text-align: center;
+		margin-top: 0px;
+		padding-top: 75px;
+	}
+
+	.engagements_grid {
+		margin-left: 5px;
+		margin-right: 15px;
+	}
+
+	.engagements_infos {
+		color: #ffffff;
+		font-size: 20px;
+		font-family: overlock;
+	}
+
+	span {
+		color: #ffffff;
+		font-size: 13px;
+		font-family: overlock;
+		margin-top: -16px;
+	}
+
+
+	/* déco footer tablette */
+
+	.logo_corbeau_footer {	
+		height: 120px;
+		width: 95px;	
+		background-image: url("images/logo_corbeau.png");
+		background-size: cover;
+	}
+}
+
+
+
+/* version phone */
+
+@media screen and (min-width: 360px) and (max-width: 520px){
+
+	.navigation_bar {
+		display: none;
+	}
+
+	.navigation_top {
+		display: none;
+	}
+
+	.navigation_bar_mobile {
+		display: flex;
+		flex-direction: row;
+		height: 96px;
+		width: 100%;
+		background-image: url("images/texture_ardoise.jpeg");
+		justify-content: space-between;
+	}
+
+	.logo_corbeau_mobile {	
+		height: 80px;
+		width: 64px;	
+		background-image: url("images/logo_corbeau.png");
+		background-size: cover;
+		margin-top: 8px;
+		margin-left: 8px;
+	}
+
+	.fa-solid {
+		position: relative;
+		color: #ffffff;
+		font-size: 50px;
+		margin-top: 24px;
+		margin-right: 32px;
+	}
+
+	.navigation_mobile a {
+		text-decoration: none;
+		color: #ffffff;
+		margin-top: 20px;
+		font-size: 20px;
+		font-family: overlock;
+	}
+
+	.navigation_mobile a:hover {
+		color: #f0a030;
+	}
+
+	.navigation_mobile {
+		display: flex;
+		flex-direction: column;
+		background-image: url("images/texture_ardoise.jpeg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: absolute;
+		height: 450px;
+		width: 100%;
+		align-items: center;
+		z-index: 10;
+		margin-left: -100%;
+	}
+
+	.menu_mobile {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.languages_mobile {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 150px;
+		margin: auto;
+		margin-top: 30px;
+	}
+
+	.languages_mobile p {
+		color: #ffffff;
+		font-size: 20px;
+	}
+
+	.connexion_caddy {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 275px;
+		margin-top: 15px;
+	}
+
+	.connexion_mobile {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 120px;
+	}
+
+	.connextion_text {
+		margin-top: -7px
+	}
+
+	.caddy_text {
+		margin-top: -7px;
+	}
+
+	.caddy_mobile {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 90px;
+	}
+
+	.navigation_bar {
+		justify-content: space-between;
+	}
+
+	.mobile-menu {
+		margin-left: 0px;
+		margin-top: 96px;
+	}
+
+
+	/* amoureux du fromage phone */
+
+	.amoureux_du_fromage {
+		display: flex;
+		height: 320px;
+		width: 100%;
+		background-image: url("images/fond_raye_mobile.png");
+		background-size: cover;
+		margin-top: 0px;
+	}
+
+	h1 {
+		font-size: 32px;
+	}
+
+	h2 {
+		font-size: 22px;
+	}
+
+	#deco_left {
+	    border: 1px solid #f0a030;
+	    width: 140px;
+	    height: 5px;
+	    border-left: 0px;
+	    border-right: 0px;
+	    text-align: center;
+	}
+
+	#deco_right {
+	    border: 1px solid #f0a030;
+	    width: 140px;
+	    height: 5px;
+	    border-left: 0px;
+	    border-right: 0px;
+	}
+
+	.maitre_corbeau_text {
+		margin-top: -7px;
+		width: 100%;
+	}
+
+	.maitre_corbeau_text h2 {
+		margin-top: -30px;
+	}
+
+
+	/* nos fromages à la une phone*/
+
+	.nos_fromage_a_la_une {
+		margin-top: -25px;
+	}
+
+	h3 {
+		font-size: 23px;
+	}
+
+	.nos_fromage_a_la_une {
+		height: 1710px;
+	}
+
+	.nos_fromages_grid {
+		display: grid;
+		grid-template-columns: 220px;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+
+
+	/* nos secrets phone */
+
+	.découvrez_nos_secrets {
+		height: 1820px;
+	}
+
+	.nos_secrets_grid {
+		display: grid;
+	    grid-template-columns: 230px;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-row-gap: 40px;
+		margin-top: 35px;
+	}
+
+
+	/* nos plateaux gourmands phone */
+
+	.nos_plateaux_gourmands {
+		height: 1710px;
+		margin-top: 60px;
+		margin-top: -50px;
+	}
+
+	.nos_plateaux_grid {
+		display: grid;
+	    grid-template-columns: 220px;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+
+
+	/* nos engagements phone */
+
+	.nos_engagements {
+		height: 895px;
+	}
+
+	.nos_engagements_title {
+		padding-top: 70px;
+	}
+
+	.engagements_grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		margin-top: -19px;
+	}
+
+	.engagements_bloc {
+		height: 200px;
+		margin-top: 50px;
+	}
+
+	.engagements_infos {
+			font-size: 20px;
+		}
+
+	span {
+		font-size: 13px;
+		margin-top: -18px;
+	}
+
+
+	/* nous contacter phone */
+
+	.nous_contacter {
+		margin-top: 0px;
+	}
+
+
+	/* formulaire phone */
+
+	form {
+		margin-top: 35px;
+	}
+
+
+	/* réseaux sociaux phone */
+
+	.social_network {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	.facebook_network {
+		height: 50px;
+		width: 160px;
+	}
+
+	.facebook_network p {	
+		font-size: 13px;
+		padding-left: 33px;	
+		margin-top: -30px;	
+	}
+
+	.facebook_network i {	
+		font-size: 26px;
+		padding-left: 6px;
+		margin-top: 13px
+	}
+
+	.twitter_network {
+		margin-top: 10px;
+		height: 50px;
+		width: 160px;
+	}
+
+	.twitter_network p {	
+		font-size: 13px;
+		padding-left: 33px;	
+		margin-top: -30px;	
+	}
+
+	.twitter_network i {	
+		font-size: 26px;
+		padding-left: 6px;
+		margin-top: 13px;
+	}
+
+
+	/* déco footer phone */
+
+	.logo_corbeau_footer {	
+		height: 90px;
+		width: 71px;	
+		background-image: url("images/logo_corbeau.png");
+		background-size: cover;
+	}
+
+
+	/* footer phone */
+
+	footer {
+		height: 250px;
+		text-align: center;
+	}
+
+	.footer_bloc_infos {
+		height: 155px;
+		width: 260px;
+	}
+
+	.footer_title {
+		font-size: 19px;
+		margin-top: 15px;
+	}
+
+	.footer_corbeau_title {
+		font-size: 17px;
+	}
+
+	.footer_adress {
+		margin-top: -25px;
+	}
+
+	.copyright {
+		font-size: 15px;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-top: 30px;
+	}
+}
+
+

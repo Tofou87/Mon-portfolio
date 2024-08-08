@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0,
+                   user-scalable=no">
+    <title>Mon portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f80ef4db84.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+	<header>
+		<div class="header_background">
+			<div class="navigation_bar">
+				<div class="logo">				
+					<a href="index.html">
+						<figure>
+							<img src="images/logo-CF-portfolio-white.png" alt="logo du portfolio">
+						</figure>
+					</a>
+				</div> <!--  fin de logo -->
+
+				<nav class="navigation">
+					<ul>
+						<li><a href="apropos.html">A propos</li>
+						<li><a href="mesrealisations.html">Mes réalisations</li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav> <!-- fin de navigation -->
+			</div> <!-- fin navigation_bar-->
+
+			<div class="navigation_bar_mobile">
+				<div class="logo_mobile">				
+					<a href="index.html">
+						<figure>
+							<img src="images/logo-CF-portfolio-white.png" alt="logo du portfolio">
+						</figure>
+					</a>
+				</div> <!--  fin de logo mobile -->
+
+				<nav class="navigation_mobile">
+					<ul class="menu_mobile">
+						<li><a href="apropos.html">A propos</li>
+						<li><a href="mesrealisations.html">Mes réalisations</li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav> <!-- fin de navigation mobile -->
+
+				<i class="fa-solid fa-bars"></i>
+
+			</div> <!-- fin de navigation bar mobile-->
+
+			<script>
+          		const menuHamburger = document.querySelector(".fa-solid")
+          		const navLinks = document.querySelector(".navigation_mobile")
+          		menuHamburger.addEventListener('click',()=>{
+          		navLinks.classList.toggle('mobile-menu')
+          		})
+        	</script>
+
+			<div class="header_content">
+				<div class="wrapper">
+					<h1>I'm web designer</h1>
+					<p>"Parce que vous êtes unique, 
+						<br>
+						votre projet l'est aussi.
+					</p>
+				</div> <!-- fin wrapper-->
+			</div> <!-- fin header_content-->
+		</div> <!-- fin de header background -->
+	</header> <!-- fin header -->
+
+
+	<section class="a_propos_container">
+		<div class="wrapper">
+			<h2>Quelques mots à mon sujet</h2>
+			<div class="informations">	
+				<article>
+					<p>Je suis Christophe Fievez, actuellement étudiant en webdesign. Depuis toujours j'aime <strong>créer</strong> des choses, <strong>aider</strong> les gens à atteindre leurs objectifs et continuer d'<strong>apprendre</strong> à travers des échanges ou la réalisation de projets.
+					</p>
+				</article>	
+				<a class="button" href="apropos.html">
+				Apprenez en plus sur moi</a>
+			</div> <!-- fin de informations -->
+		</div> <!-- fin wrapper -->
+	</section> <!-- fin a_propos -->
+
+
+	<section class="realisations">
+		<div class="wrapper">
+			<h2>Quelques unes de mes réalisations</h2>
+			<div class="realisations_container">
+				<div class="realisations_content">
+					<a class="w_inline_block" href="maitrecorbeau.html">
+						<img class="corbeau_project" src="images/maitre_corbeau_desktop.png">
+					</a>
+					<div class="link_wrap">
+						<h3>
+							Projet : Maître corbeau.
+						</h3>
+						<div class="link_underline"></div>		
+					</div> <!-- fin de link wrap -->
+					<p class="informations_text">
+						Codage en HTML et CSS d'une maquette graphique.
+					</p>		
+				</div> <!-- fin de realisations content -->
+
+				<div class="realisations_content">
+					<a class="w_inline_block" href="coffeeram.html">
+						<img class="coffeeram_project" src="images/coffee_phone.png">
+					</a>
+					<div class="link_wrap">
+						<h3>
+							Projet : CoffeeRam.
+						</h3>
+						<div class="link_underline"></div>		
+					</div> <!-- fin de link wrap -->	
+					<p class="informations_text">
+						Création du visuel d'une application pour une machine à café.
+					</p>		
+				</div> <!-- fin de realisations content -->
+
+				<div class="realisations_content">
+					<a class="w_inline_block" href="edenginlogo.html">
+						<img class="edenginlogo_project" src="images/gin_logo_tablette.png">
+					</a>
+					<div class="link_wrap">
+						<h3>
+							Project : Eden gin.
+						</h3>
+						<div class="underline"></div>			
+					</div> <!-- fin de link wrap -->
+					<p class="informations_text">
+						Création d'un logo sur les thèmes "gin" et "Eden".
+					</p>
+				</div> <!-- fin de realisations content -->
+						
+				<div class="realisations_content">
+					<a class="w_inline_block" href="edenginmaquette.html">
+						<img class="edenginmaquette_project" src="images/gin_maquette_tablette.png">
+					</a>
+					<div class="link_wrap">
+						<h3>
+							Projet : Eden gin.
+						</h3>
+						<div class="link_underline"></div>		
+					</div> <!-- fin de link wrap -->
+					<p class="informations_text">
+						Création d'une maquette graphique sur les thèmes "gin" et "Eden".
+					</p>		
+				</div> <!-- fin de realisations content -->
+			</div> <!-- fin de realisations container -->
+		</div> <!-- fin wrapper -->
+	</section> <!-- fin de realisations-->
+
+
+	<section class="softskills_container">
+		<div class="wrapper">
+			<h2>Quelques-uns de mes softskills</h2>
+			<div class="softskills_zone">
+				<div class="softskills_leftzone">
+					<ul>
+						<li>Créativité</li>
+						<li>Curioisté</li>
+						<li>Adaptabilité</li>
+						<li>Motivation</li>
+						<li>Communication</li>
+						<li>Sens du collectif</li>
+					</ul>
+				</div> <!-- fin de softskills left zone -->
+				<div class="softskills_rightzone">
+					<figure>
+						<img src="images/softskills.png">
+					</figure>	
+				</div> <!-- fin de softskills rightzone -->
+			</div> <!-- fin de softskills zone -->
+		</div> <!-- fin wrapper -->	
+	</section> <!-- fin de softskliis container -->
+
+
+	<footer>
+		<p>
+			Copyright &copy; 2022 Fievez Christophe. Tous droits réservés.
+		</p>
+	</footer>
+	
+</body>

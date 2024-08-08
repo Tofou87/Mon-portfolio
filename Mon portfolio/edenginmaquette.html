@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0,
+                   user-scalable=no">
+    <title>Eden gin - maquette</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f80ef4db84.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <header>
+    <div class="second_background">
+      <div class="navigation_bar">
+        <div class="logo">        
+          <a href="index.html">
+            <figure>
+              <img src="images/logo-CF-portfolio-white.png" alt="logo du portfolio">
+            </figure>
+          </a>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="mesrealisations.html">Mes réalisations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav> <!-- fin de navigation -->
+      </div> <!-- fin navigation_bar-->
+
+      <div class="navigation_bar_mobile">
+        <div class="logo_mobile">       
+          <a href="index.html">
+            <figure>
+              <img src="images/logo-CF-portfolio-white.png" alt="logo du portfolio">
+            </figure>
+          </a>
+        </div> <!--  fin de logo mobile -->
+
+        <nav class="navigation_mobile">
+          <ul class="menu_mobile">
+            <li><a href="apropos.html">A propos</li>
+            <li><a href="mesrealisations.html">Mes réalisations</li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav> <!-- fin de navigation mobile -->
+
+        <i class="fa-solid fa-bars"></i>
+
+      </div> <!-- fin de navigation bar mobile-->
+
+      <script>
+              const menuHamburger = document.querySelector(".fa-solid")
+              const navLinks = document.querySelector(".navigation_mobile")
+              menuHamburger.addEventListener('click',()=>{
+              navLinks.classList.toggle('mobile-menu')
+              })
+          </script>      
+    </div> <!-- fin second background -->   
+  </header> <!-- fin header -->
+
+
+  <section class="edenginmaquette">
+    <div class="wrapper">
+      <h1>Projet : Eden gin</h1>
+      <article>
+          <p>
+            Contexte : Dans le cadre d'un travail individuel, il m'a été donné 2 informations :
+          </p>
+          <ul>
+            <li>Il s'agit d'une marque de gin;</li>
+            <li>La thématique de la marque est "l'Eden".</li>
+          </ul>
+          <p>En partant de ces informations je devais réaliser la maquette graphique de la page d'accueil de cette marque.</p>
+      </article>
+
+      <a class="button" href="images/edenginmaquettegraphique.png">
+          Voir le résultat.</a>
+
+    </div> <!-- fin de wrapper -->
+  </section> <!-- fin de eden gin maquette -->
+
+
+  <footer>
+      <p>
+        Copyright &copy; 2022 Fievez Christophe. Tous droits réservés.
+      </p>
+  </footer>
+
+</body>

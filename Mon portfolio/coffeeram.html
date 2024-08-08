@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0,
+                   user-scalable=no">
+    <title>CoffeeRam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f80ef4db84.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+	<header>
+		<div class="second_background">
+			<div class="navigation_bar">
+				<div class="logo">				
+					<a href="index.html">
+						<figure>
+							<img src="images/logo-CF-portfolio-white.png" alt="logo du portfolio">
+						</figure>
+					</a>
+				</div>
+				<nav class="navigation">
+					<ul>
+						<li><a href="apropos.html">A propos</a></li>
+						<li><a href="mesrealisations.html">Mes réalisations</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav> <!-- fin de navigation -->
+			</div> <!-- fin navigation_bar-->
+
+			<div class="navigation_bar_mobile">
+				<div class="logo_mobile">				
+					<a href="index.html">
+						<figure>
+							<img src="images/logo-CF-portfolio-white.png" alt="logo du portfolio">
+						</figure>
+					</a>
+				</div> <!--  fin de logo mobile -->
+
+				<nav class="navigation_mobile">
+					<ul class="menu_mobile">
+						<li><a href="apropos.html">A propos</li>
+						<li><a href="mesrealisations.html">Mes réalisations</li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav> <!-- fin de navigation mobile -->
+
+				<i class="fa-solid fa-bars"></i>
+
+			</div> <!-- fin de navigation bar mobile-->
+
+			<script>
+          		const menuHamburger = document.querySelector(".fa-solid")
+          		const navLinks = document.querySelector(".navigation_mobile")
+          		menuHamburger.addEventListener('click',()=>{
+          		navLinks.classList.toggle('mobile-menu')
+          		})
+        	</script>	
+		</div> <!-- fin second background -->		
+	</header> <!-- fin header -->
+
+
+	<section class="coffeeram">
+		<div class="wrapper">
+			<h1>Projet : CoffeeRam</h1>
+			<article>
+				<p>
+					Lors de la journée porte ouverte de l'IramPS il nous a été demandé de réaliser la partie visuelle d'une application permettant de passer une commande personnalisée à une machine à café.
+				</p>	
+				<p>
+					Nous disposions pour se faire de 6h par équipe de 2 afin de proposer le résultat le plus abouti possible.
+				</p>
+				<p>
+					Le visuel de cette application devait proposer les fenêtre suivantes :
+				</p>
+				<ul>
+					<li>Une page d'accueil permettant d'entrer son nom;</li>
+					<li>Une page permettant de choisir l'intensité de son café;</li>
+					<li>Une page permettant de choisir la quantité d'eau de son café;</li>
+					<li>Une page permettant de choisir la proportion de lait de son café;</li>
+					<li>Une page permettant de choisir la quantité de sucre dans son café;</li>
+					<li>Une page récapitulant les choix effectuer avant de confirmer sa commande;</li>
+					<li>Une page remerciant l'utilisateur et indiquant le temps d'attente avant de pouvoir récupérer sa commande.</li>
+				</ul>
+				<p>
+					Vous pouvez découvrir ci-dessous le résultat obtenu.
+				</p>
+			</article>
+
+			<div class="coffeeram_container">
+				<div class="coffeeram_content">
+					<img src="coffeeram/coffeeram1.png">					
+				</div>
+				<div class="coffeeram_content">
+					<img src="coffeeram/coffeeram2.png">					
+				</div>
+				<div class="coffeeram_content">
+					<img src="coffeeram/coffeeram3.png">					
+				</div>
+				<div class="coffeeram_content">
+					<img src="coffeeram/coffeeram4.png">					
+				</div>
+				<div class="coffeeram_content">
+					<img src="coffeeram/coffeeram5.png">					
+				</div>
+				<div class="coffeeram_content">
+					<img src="coffeeram/coffeeram6.png">					
+				</div>
+				<div class="coffeeram_content">
+					<img src="coffeeram/coffeeram7.png">					
+				</div>	
+			</div> <!-- fin de coffeeram container -->	
+		</div> <!-- fin wrapper-->
+	</section> <!-- fin coffeeram-->
+
+
+	<footer>
+		<p>
+			Copyright &copy; 2022 Fievez Christophe. Tous droits réservés.
+		</p>
+	</footer>
+
+</body>

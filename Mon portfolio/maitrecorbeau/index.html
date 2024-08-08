@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0,
+                   user-scalable=no">
+    <title> Maître Corbeau </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Overlock:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f80ef4db84.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <div class="wrapper">
+    <header>
+        <div class="navigation_top">
+          <div class="languages">
+            <p class="languages_text">Langues</p>
+            <div id="english_flag">
+              <a href="#"><img src="images/drapeau_en.png"></a>
+            </div>
+            <div id="french_flag">
+              <a href="#"><img src="images/drapeau_fr.png"></a>
+            </div>
+          </div>
+           <div class="connexion">
+            <div id="connexion_logo">
+              <img src="images/logo_profil.png">
+            </div>
+            <a href="#">
+              <p class="connextion_text">Connexion</p>
+            </a>
+          </div>
+          <div class="caddy">
+
+            <div id="caddy_logo">
+              <img src="images/logo_caddy.png">             
+            </div>
+            <a href="#">
+              <p class="caddy_text">Panier</p>
+            </a>
+          </div>
+        </div>  <!-- fin navigation top-->
+
+        <div class="navigation_bar">
+          <nav class="navigation"> 
+              <a href="#">Accueil</a>
+              <a href="#">Nos fromages</a>
+              <a href="#">Notre histoire</a>
+              <img id="logo_corbeau" src="images/logo_corbeau.png">
+              <a href="#">Secrets de fabrication</a>
+              <a href="#">Nous contacter</a>
+          </nav>
+        </div>  <!-- fin navigation bar -->
+
+        <div class="navigation_bar_mobile">
+          <div class="logo_corbeau_mobile"></div>
+            <nav class="navigation_mobile">
+              <div class="menu_mobile"> 
+                <a href="#">Accueil</a>
+                <a href="#">Nos fromages</a>
+                <a href="#">Notre histoire</a>
+                <a href="#">Secrets de fabrication</a>
+                <a href="#">Nous contacter</a>
+              </div>
+
+              <div class="languages_connexion_caddy_mobile">
+              <div class="languages_mobile">
+                <p class="languages_text">Langues</p>
+                <div id="english_flag">
+                  <a href="#"><img src="images/drapeau_en.png"></a>
+                </div>
+                <div id="french_flag">
+                  <a href="#"><img src="images/drapeau_fr.png"></a>
+                </div>
+              </div>
+
+              <div class="connexion_caddy">
+                <div class="connexion_mobile">
+                  <div id="connexion_logo">
+                    <img src="images/logo_profil.png">
+                  </div>
+                  <a href="#">
+                    <p class="connextion_text">Connexion</p>
+                  </a>      
+                </div>
+                <div class="caddy_mobile">
+                  <div id="caddy_logo">
+                    <img src="images/logo_caddy.png">          
+                  </div>
+                  <a href="#">
+                    <p class="caddy_text">Panier</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <i class="fa-solid fa-bars"></i>
+        </div>  <!-- fin navigation bar mobile -->
+
+        <script>
+          const menuHamburger = document.querySelector(".fa-solid")
+          const navLinks = document.querySelector(".navigation_mobile")
+          menuHamburger.addEventListener('click',()=>{
+          navLinks.classList.toggle('mobile-menu')
+          })
+        </script>
+    </header>
+
+
+    <section class="amoureux_du_fromage">
+      <div class="maitre_corbeau_text">
+        <h1>Maître Corbeau</h1>
+        <h2>Pour les amoureux du fromage</h2>
+      </div>
+    </section>
+
+
+    <section class="nos_fromage_a_la_une">
+      <div class="fromage_a_la_une_title">
+        <div id="deco_left"></div>
+        <h3>Nos fromages à la une</h3>
+        <div id="deco_right"></div>
+      </div>
+
+      <div class="nos_fromages_grid">
+        <div class="grid_bloc">
+          <div class="images_and_stars">
+            <img class="fromage_bloc" src="images/photo_parmesan.png">
+            <img class="stars_note" src="images/note_4_etoiles.png">
+            <div class="middle_line"></div> 
+          </div>
+            
+          <div class="products_infos"> 
+            <p class="fromage_name">Parmesan</p> 
+            <div class="price_and_weight">
+              <div class="price_bloc">
+                  <p class="price">9.50€</p>
+              </div>
+              <p class="weight">les 500g</p>     
+            </div>
+          </div>
+
+          <div class="hover">
+            <a class="icon_hover" href="#">
+                <img src="images/icone_cloche.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_coeur.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_caddy.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_envellope.png">
+              </a>
+          </div>
+        </div>
+        
+        <div class="grid_bloc">
+          <div class="images_and_stars">
+            <img class="fromage_bloc" src="images/photo_abbaye_tamie.png">
+            <img class="stars_note" src="images/note_4_etoiles.png">
+            <div class="middle_line"></div> 
+          </div>    
+          <div class="products_infos"> 
+            <p class="fromage_name">Abbaye de Tamié</p> 
+            <div class="price_and_weight">
+              <div class="price_bloc">
+                  <p class="price">8.75€</p>
+              </div>
+              <p class="weight">les 500g</p>    
+            </div>
+          </div>
+
+          <div class="hover">
+            <a class="icon_hover" href="#">
+                <img src="images/icone_cloche.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_coeur.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_caddy.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_envellope.png">
+              </a>
+          </div>
+        </div>
+
+        <div class="grid_bloc">
+          <div class="images_and_stars">
+            <img class="fromage_bloc" src="images/photo_buchette_affinee.png">
+            <img class="stars_note" src="images/note_4_etoiles.png">
+            <div class="middle_line"></div> 
+          </div>         
+          <div class="products_infos"> 
+            <p class="fromage_name">Buchette affinnée</p> 
+            <div class="price_and_weight">
+              <div class="price_bloc">
+                  <p class="price">3.41€</p>
+              </div>
+              <p class="weight">les 500g</p>            
+            </div> 
+          </div>
+
+          <div class="hover">
+            <a class="icon_hover" href="#">
+                <img src="images/icone_cloche.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_coeur.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_caddy.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_envellope.png">
+              </a>
+          </div>
+        </div>
+
+        <div class="grid_bloc">
+          <div class="images_and_stars">
+            <img class="fromage_bloc" src="images/photo_crottin_chavignol.png">
+            <img class="stars_note" src="images/note_5_etoiles.png">
+            <div class="middle_line"></div> 
+          </div>      
+          <div class="products_infos"> 
+            <p class="fromage_name">Crottin de Chavignol</p> 
+            <div class="price_and_weight">
+              <div class="price_bloc">
+                  <p class="price">3.41€</p>
+              </div>
+              <p class="weight">/ pièce</p>         
+            </div>
+          </div>
+
+          <div class="hover">
+            <a class="icon_hover" href="#">
+                <img src="images/icone_cloche.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_coeur.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_caddy.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_envellope.png">
+              </a>
+          </div>
+        </div>
+      </div> <!-- fin nos_fromages_grid -->
+    </section> <!-- fin section nos fromages -->
+
+
+    <section class="découvrez_nos_secrets">
+      <div class="découvrez_nos_secrets_title">
+        <div id="deco_left"></div>       
+        <h3>Découvrez nos secrets</h3>
+        <div id="deco_right"></div>
+      </div>
+
+      <div class="nos_secrets_grid">
+        <div class="grid_bloc_secrets_back">
+          <div class="grid_bloc_secrets">
+            <img class="fromage_bloc_secret" src="images/photo_fromagerie.png"> 
+            <p class="products_title">Fromagerie</p> 
+            <p class="products_infos_secret">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ex quae sed incidunt quidem sit voluptatem dolorem non pariatur assumenda accusamus labore modi, architecto dolore! 
+            </p>            
+          </div>      
+        </div>
+
+        <div class="grid_bloc_secrets_back">
+          <div class="grid_bloc_secrets">
+            <img class="fromage_bloc_secret" src="images/photo_epicerie_fine.png"> 
+            <p class="products_title">Epicerie fine</p> 
+            <p class="products_infos_secret">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ex quae sed incidunt quidem sit voluptatem dolorem non pariatur assumenda accusamus labore modi, architecto dolore! 
+            </p>         
+          </div>  
+        </div>
+
+        <div class="grid_bloc_secrets_back">
+          <div class="grid_bloc_secrets">
+            <img class="fromage_bloc_secret" src="images/photo_cave_a_vin.png"> 
+            <p class="products_title">Cave à vin</p> 
+            <p class="products_infos_secret">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ex quae sed incidunt quidem sit voluptatem dolorem non pariatur assumenda accusamus labore modi, architecto dolore! 
+            </p>         
+          </div>  
+        </div>
+
+        <div class="grid_bloc_secrets_back">
+          <div class="grid_bloc_secrets">
+            <img class="fromage_bloc_secret" src="images/photo_bar_a_fromage.png"> 
+            <p class="products_title">Bar à fromage</p> 
+            <p class="products_infos_secret">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ex quae sed incidunt quidem sit voluptatem dolorem non pariatur assumenda accusamus labore modi, architecto dolore! 
+            </p>      
+          </div>
+        </div>   
+      </div> <!-- fin nos secrets grid -->
+    </section> <!-- fin découvrez nos secrets -->
+
+
+    <section class="nos_plateaux_gourmands">
+      <div class="nos_plateaux_gourmands_title">
+        <div id="deco_left"></div>       
+        <h3>Nos plateaux gourmands</h3>
+        <div id="deco_right"></div>
+      </div>
+
+      <div class="nos_plateaux_grid">
+        <div class="grid_bloc">
+          <div class="images_and_stars">
+            <img class="plateaux_bloc" src="images/photo_regional.png">
+            <img class="stars_note" src="images/note_4_etoiles.png">
+            <div class="middle_line"></div> 
+          </div>  
+          <div class="products_infos"> 
+            <p class="fromage_name">Le régional</p> 
+            <div class="price_and_weight">
+              <div class="price_bloc">
+                  <p class="price">9.50€</p>
+              </div>
+              <p class="weight">les 500g</p>              
+            </div>  
+          </div>
+
+          <div class="hover">
+            <a class="icon_hover" href="#">
+                <img src="images/icone_cloche.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_coeur.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_caddy.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_envellope.png">
+              </a>
+          </div>
+        </div>
+        
+        <div class="grid_bloc">
+          <div class="images_and_stars">
+            <img class="plateaux_bloc" src="images/photo_campagnard.png">
+            <img class="stars_note" src="images/note_4_etoiles.png">
+            <div class="middle_line"></div> 
+          </div>
+            
+          <div class="products_infos"> 
+            <p class="fromage_name">Le campagnard</p> 
+            <div class="price_and_weight">
+              <div class="price_bloc">
+                  <p class="price">8.75€</p>
+              </div>
+              <p class="weight">les 500g</p>        
+            </div>
+          </div>
+
+          <div class="hover">
+            <a class="icon_hover" href="#">
+                <img src="images/icone_cloche.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_coeur.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_caddy.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_envellope.png">
+              </a>
+          </div>
+        </div>
+
+        <div class="grid_bloc">
+          <div class="images_and_stars">
+            <img class="plateaux_bloc" src="images/photo_classique.png">
+            <img class="stars_note" src="images/note_4_etoiles.png">
+            <div class="middle_line"></div> 
+          </div>           
+          <div class="products_infos"> 
+            <p class="fromage_name">Le classique</p> 
+            <div class="price_and_weight">
+              <div class="price_bloc">
+                  <p class="price">3.41€</p>
+              </div>
+              <p class="weight">les 500g</p>             
+            </div>  
+          </div>
+
+          <div class="hover">
+            <a class="icon_hover" href="#">
+                <img src="images/icone_cloche.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_coeur.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_caddy.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_envellope.png">
+              </a>
+          </div>
+        </div>
+
+        <div class="grid_bloc">
+          <div class="images_and_stars">
+            <img class="plateaux_bloc" src="images/photo_copieux.png">
+            <img class="stars_note" src="images/note_5_etoiles.png">
+            <div class="middle_line"></div> 
+          </div>           
+          <div class="products_infos"> 
+            <p class="fromage_name">Le copieux</p> 
+            <div class="price_and_weight">
+              <div class="price_bloc">
+                  <p class="price">3.41€</p>
+              </div>
+              <p class="weight">/ pièce</p>          
+            </div>
+          </div>
+
+          <div class="hover">
+            <a class="icon_hover" href="#">
+                <img src="images/icone_cloche.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_coeur.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_caddy.png">
+              </a>
+              <a class="icon_hover" href="#">
+                <img src="images/icone_envellope.png">
+              </a>
+          </div>
+        </div> 
+      </div> <!-- fin nos_plateaux_grid -->
+    </section> <!-- fin section nos plateaux -->
+
+
+
+
+    <section class="nos_engagements">
+      <div class="nos_engagements_title">
+        <h3>Nos engagements</h3>
+      </div>
+      <div class="engagements_grid">
+        <div class="engagements_bloc">
+          <div class="engagements_bloc_top">
+            <img class="engagements_pictos" src="images/logo_cadenas.png">
+          </div>
+          <div class="engagements_bloc_bottom">
+            <p class="engagements_infos">
+              Payement sécurisé
+            </p>   
+          </div>  
+        </div>
+
+        <div class="engagements_bloc">
+          <div class="engagements_bloc_top">
+            <img class="engagements_pictos" src="images/logo_chrono.png">
+          </div>
+          <div class="engagements_bloc_bottom">
+            <p class="engagements_infos">
+              Livraison en 24h
+            </p>
+            <span>
+              Dans un rayon de 50km
+            </span> 
+          </div> 
+        </div>
+
+        <div class="engagements_bloc">
+          <div class="engagements_bloc_top">
+            <img class="engagements_pictos" src="images/logo_camion.png">
+          </div>
+          <div class="engagements_bloc_bottom">
+            <p class="engagements_infos">
+              Livraison gratuite
+            </p>   
+          </div>
+        </div> 
+      </div> <!-- fin engagements grid -->
+    </section> <!-- fin nos engagements -->
+
+
+    <section class="nous_contacter">
+      <div class="nous_contacter_title">
+        <h3>Nous contacter</h3>
+      </div>
+
+      <form method="post" action="#">
+          <input 
+            type="text" 
+            id="nom" 
+            name="nom" 
+            placeholder="Nom" 
+            required />
+
+          <input 
+            type="text"
+            id="prenom"
+            name="prenom"
+            placeholder="Prénom"
+            required
+          />
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+
+          <textarea placeholder="Message" required></textarea>
+
+          <button type="submit">Envoyez mon message</button>
+
+      </form>
+
+
+      <div class="social_network">
+        <div class="facebook_network">
+          <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+              <p>Rejoignez-nous sur facebook</p>
+            </a>
+        </div>
+        <div class="twitter_network">
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+              <p>Suivez-nous sur twitter</p>
+          </a>
+        </div>
+      </div>
+    </section> <!-- fin nous contacter -->
+
+
+    <section class="deco_footer">       
+      <div class="logo_corbeau_footer"></div>
+    </section> <!-- fin deco footer -->
+
+
+    <footer>
+      <div class="footer_bloc_infos">
+        <div class="footer_title">
+          <p>Venez nous rendre visite</p>
+        </div>
+        <div class="footer_corbeau_title">
+          <p>Maître Corbeau</p>
+        </div>
+        <div class="footer_adress">
+          <p>Chaussée de Binche, 159
+            <br>7000 Mons
+          </p>
+        </div>
+        <div class="phone_number">
+          <p>Tél : 065.82.85.09</p>
+        </div>
+      </div>
+      <p class="copyright">
+        Maitre Corbeau 2016 - &copy; Copyright Living Tuts et Webdesign Trends
+      </p>
+    </footer>
+
+  </div>  <!-- fin wrapper -->
+
+</body>

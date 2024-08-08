@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0,
+                   user-scalable=no">
+    <title>Mes réalisations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f80ef4db84.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+	<header>
+		<div class="second_background">
+			<div class="navigation_bar">
+				<div class="logo">				
+					<a href="index.html">
+						<figure>
+							<img src="images/logo-CF-portfolio-white.png" alt="logo du portfolio">
+						</figure>
+					</a>
+				</div>
+				<nav class="navigation">
+					<ul>
+						<li><a href="apropos.html">A propos</a></li>
+						<li><a href="mesrealisations.html">Mes réalisations</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav> <!-- fin de navigation -->
+			</div> <!-- fin navigation_bar-->
+
+			<div class="navigation_bar_mobile">
+				<div class="logo_mobile">				
+					<a href="index.html">
+						<figure>
+							<img src="images/logo-CF-portfolio-white.png" alt="logo du portfolio">
+						</figure>
+					</a>
+				</div> <!--  fin de logo mobile -->
+
+				<nav class="navigation_mobile">
+					<ul class="menu_mobile">
+						<li><a href="apropos.html">A propos</li>
+						<li><a href="mesrealisations.html">Mes réalisations</li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav> <!-- fin de navigation mobile -->
+
+				<i class="fa-solid fa-bars"></i>
+
+			</div> <!-- fin de navigation bar mobile-->
+
+			<script>
+          		const menuHamburger = document.querySelector(".fa-solid")
+          		const navLinks = document.querySelector(".navigation_mobile")
+          		menuHamburger.addEventListener('click',()=>{
+          		navLinks.classList.toggle('mobile-menu')
+          		})
+        	</script> 	
+		</div> <!-- fin second background -->		
+	</header> <!-- fin header -->
+
+
+	<section class="realisations_page">
+		<div class="wrapper">
+			<h1>Mes réalisations</h1>
+			<div class="realisations_page_container">
+				<div class="realisations_content">
+					<a class="w_inline_block" href="maitrecorbeau.html">
+						<img class="corbeau_project" src="images/maitre_corbeau_desktop.png">
+					</a>
+					<div class="link_wrap">
+						<h3>
+							Projet : Maître corbeau.
+						</h3>
+						<div class="link_underline"></div>				
+					</div> <!-- fin de link_wrap -->
+					<p class="informations_text">
+						Codage en HTML et CSS d'une maquette graphique.
+					</p>
+				</div> <!-- fin de realisations content -->
+
+				<div class="realisations_content">
+					<a class="w_inline_block" href="coffeeram.html">
+						<img class="coffeeram_project" src="images/coffee_phone.png">
+					</a>
+					<div class="link_wrap">
+						<h3>
+							Projet : CoffeeRam.
+						</h3>
+						<div class="link_underline"></div>		
+					</div> <!-- fin de link_wrap -->
+					<p class="informations_text">
+						Création du visuel d'une application pour une machine à café.
+					</p>		
+				</div> <!-- fin de realisations content -->
+
+				<div class="realisations_content">
+					<a class="w_inline_block" href="edenginlogo.html">
+						<img class="edenginlogo_project" src="images/gin_logo_tablette.png">
+					</a>
+					<div class="link_wrap">
+						<h3>
+							Project : Eden gin.
+						</h3>
+						<div class="underline"></div>			
+					</div> <!-- fin de link_wrap -->
+					<p class="informations_text">
+						Création d'un logo sur les thèmes "gin" et "Eden".
+					</p>
+				</div> <!-- fin de realisations content -->
+						
+				<div class="realisations_content">
+					<a class="w_inline_block" href="edenginmaquette.html">
+						<img class="edenginmaquette_project" src="images/gin_maquette_tablette.png">
+					</a>
+					<div class="link_wrap">
+						<h3>
+							Projet : Eden gin.
+						</h3>
+						<div class="link_underline"></div>		
+					</div> <!-- fin de link wrap -->
+					<p class="informations_text">
+						Création d'une maquette graphique sur les thèmes "gin" et "Eden".
+					</p>
+				</div> <!-- fin de realisations content -->
+			</div> <!-- fin de realisations page container -->				
+		</div> <!-- fin wrapper -->
+	</section> <!-- fin de realisations page -->
+
+
+	<footer>
+			<p>
+				Copyright &copy; 2022 Fievez Christophe. Tous droits réservés.
+			</p>
+	</footer>
+
+</body>
+
+
+
